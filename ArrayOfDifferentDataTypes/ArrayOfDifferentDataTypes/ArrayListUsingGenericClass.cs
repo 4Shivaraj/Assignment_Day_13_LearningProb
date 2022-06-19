@@ -13,7 +13,7 @@ namespace ArrayListOfDifferentDataTypes
         {
             this.inputArray = inputArray;
         }
-        public void ToPrint()  //Generic Method
+        public void ToPrint() 
         {
             foreach (var element in inputArray)
             {
