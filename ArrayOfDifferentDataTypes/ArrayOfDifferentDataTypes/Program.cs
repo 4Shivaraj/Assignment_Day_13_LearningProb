@@ -7,16 +7,30 @@ namespace ArrayListOfDifferentDataTypes
         public static void Main(string[] args)
         {
             ArrayListOfDataTypes arrayListOfData = new ArrayListOfDataTypes();
+            Console.WriteLine("Using Normal Method: ");
             arrayListOfData.PrintIntArray();
             arrayListOfData.PrintDoubleArray();
             arrayListOfData.PrintCharArray();
+           
+            
+            
+            //Intialising Array To print Array List using Generics
+            int[] intArray = { 1, 2, 3, 4, 5, 6, 7 };
+            double[] doubleArray = { 1.2, 1.3, 1.4, 1.5 };
+            char[] charArray = { 'A', 'B', 'C', 'D' };
+            ArrayListWithGenerics arrayListWithGenerics = new ArrayListWithGenerics();
+            Console.WriteLine("Using Generic Method: ");
+            arrayListWithGenerics.ToprintGeneric<int>(intArray);
+            arrayListWithGenerics.ToprintGeneric<double>(doubleArray);
+            arrayListWithGenerics.ToprintGeneric<char>(charArray);
+         
             Console.ReadLine();
         }
     }
     
 }
-//UC-1
-////Print Array of Different Data Types
+//UC-2
+////Print Array of Different Data Types using Generics
 
 //Result
 //1

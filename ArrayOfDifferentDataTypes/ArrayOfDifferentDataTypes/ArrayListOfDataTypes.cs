@@ -8,7 +8,7 @@ namespace ArrayListOfDifferentDataTypes
 {
     public class ArrayListOfDataTypes
     {
-        int[] intArray = { 1, 2, 3, 4, 5, 6, 7 };
+        int[] intArray = { 1, 2, 3, 4, 5, 6, 7 }; 
         public void PrintIntArray()
         {
             foreach (var element in intArray)
